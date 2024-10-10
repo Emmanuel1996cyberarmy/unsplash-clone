@@ -205,4 +205,18 @@ export default {
     background-position: -200% 0;
   }
 }
+
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
 </style>
